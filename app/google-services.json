@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "819426564952",
+    "firebase_url": "https://mytube-ed3ab.firebaseio.com",
+    "project_id": "mytube-ed3ab",
+    "storage_bucket": "mytube-ed3ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819426564952:android:c8b2879ea19ac4e9",
+        "android_client_info": {
+          "package_name": "com.example.andrewkyu.mytube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819426564952-ijnfupto3nsi8qb0c9n58dokmln32suu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andrewkyu.mytube",
+            "certificate_hash": "44a1216e02c548bdd5289fe44e295d763062bd3e"
+          }
+        },
+        {
+          "client_id": "819426564952-2sh9aa6ojtsvfevk6taiss1nd7upjsr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDmo06aOCXDfPbaU-tgjyuq7YEIHvi3HA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819426564952-2sh9aa6ojtsvfevk6taiss1nd7upjsr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
