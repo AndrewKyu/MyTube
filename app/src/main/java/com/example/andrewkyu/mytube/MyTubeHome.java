@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MyTubeHome extends AppCompatActivity {
 
@@ -16,26 +19,30 @@ public class MyTubeHome extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
+    private List<ListItem> listItems;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_tube_home);
 
 
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView_Main);
+        mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-//        mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
-//
-//        // use this setting to improve performance if you know that changes
-//        // in content do not change the layout size of the RecyclerView
-//        mRecyclerView.setHasFixedSize(true);
-//
-//        // use a linear layout manager
-//        mLayoutManager = new LinearLayoutManager(this);
-//        mRecyclerView.setLayoutManager(mLayoutManager);
-//
-//        // specify an adapter (see also next example)
-//        mAdapter = new MyAdapter(myDataset);
-//        mRecyclerView.setAdapter(mAdapter);
+        //We'll put all data that we need to display into recyclerView
+        listItems = new ArrayList<>();
+
+        for(int i = 0; i <= 10; i++){
+            ListItem listItem = new ListItem(
+                    "heading" + i+1,
+                    "test data"
+            );
+            listItems.add(listItem);
+        }
+        mAdapter = new MyTubeAdapter(listItems, this); //it will take the list items and context as parameters
+        mRecyclerView.setAdapter(mAdapter);
     }
 
 
