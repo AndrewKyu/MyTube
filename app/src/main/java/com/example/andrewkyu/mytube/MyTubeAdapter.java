@@ -34,7 +34,7 @@ public class MyTubeAdapter extends RecyclerView.Adapter<MyTubeAdapter.ViewHolder
         ListItem listItem = listItems.get(position);
 
         holder.textViewHead.setText(listItem.getHead());
-        holder.textViewDescription.setText(listItem.getDescrption());
+        holder.textViewDescription.setText(listItem.getDescription());
 
         holder.textViewHead.setOnClickListener(new View.OnClickListener() {
             @Override

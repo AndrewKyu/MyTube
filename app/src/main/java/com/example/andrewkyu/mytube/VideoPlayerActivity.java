@@ -21,6 +21,7 @@ public class VideoPlayerActivity extends YouTubeBaseActivity{
 
         mYouTubePlayerView = (YouTubePlayerView) findViewById(R.id.videoplayerView);
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
+
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 youTubePlayer.loadVideo("bqSSLr8A8PU");
@@ -32,6 +33,6 @@ public class VideoPlayerActivity extends YouTubeBaseActivity{
             }
         };
 
-        mYouTubePlayerView.initialize("AIzaSyBLEndthMOIRMJAOxGX-nP9ZgZTzKcabZ4", mOnInitializedListener);
+        mYouTubePlayerView.initialize(YouTubeConnector.KEY, mOnInitializedListener);
     }
 }

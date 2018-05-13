@@ -36,8 +36,10 @@ public class MyTubeHome extends AppCompatActivity {
 
         for(int i = 0; i <= 10; i++){
             ListItem listItem = new ListItem(
-                    "heading" + i+1,
-                    "test data"
+                    "heading" + (i+1),
+                    "test data",
+                    "asdf",
+                    "asdfasdf"
             );
             listItems.add(listItem);
         }
